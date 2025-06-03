@@ -1,356 +1,811 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    padding-top: 5%;
+    padding-top: 70px; /* Reduced from 5% for better mobile experience */
+    line-height: 1.6;
 }
 
+/* ===== NAVIGATION BAR ===== */
 .navbar-container {
     position: fixed;
     top: 0;
-    width: 79%;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0em 13em;
+    padding: 0.8em 2em; /* Reduced padding for smaller height */
     background-color: white;
     border-bottom: 1px solid #e5e5e5;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); /* Softer shadow */
     z-index: 1000;
+    height: 70px; /* Fixed height for consistency */
 }
 
 .navbar-logo {
-    width: 200px;
+    width: 160px; /* Slightly smaller for better proportion */
+    height: auto;
 }
 
 .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em; /* Reduced gap */
 }
 
+/* Navigation Links - Style 1 */
 .navbar-link-1 {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #000;
+    font-weight: 500; /* Reduced from bold */
+    padding: 0.4em 0.8em; /* Reduced padding */
+    border-radius: 6px;
+    transition: all 0.2s ease; /* Faster, smoother transition */
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
-.navbar-link-1:hover{
-    background-color: rgba(236, 220, 226, 0.9);
+.navbar-link-1:hover {
+    background-color: rgba(236, 220, 226, 0.7);
+    transform: translateY(-1px); /* Subtle lift effect */
 }
 
+/* Navigation Links - Style 2 */
 .navbar-link-2 {
     text-decoration: none;
     color: rgb(248, 47, 131);
-    font-weight: bold;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    border-radius: 6px;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
-.navbar-link-2:hover{
-    background-color: rgba(236, 220, 226, 0.9);
+.navbar-link-2:hover {
+    background-color: rgba(248, 47, 131, 0.1);
+    transform: translateY(-1px);
 }
 
+/* Navigation Button */
 .navbar-button {
-    border: 1px solid rgb(245, 24, 120);
+    border: 2px solid rgb(245, 24, 120);
     background-color: white;
     color: rgb(245, 27, 121);
     padding: 0.4em 1em;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navbar-link i {
-    margin-right: 0.5em;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .navbar-button:hover {
-    background-color: rgba(236, 220, 226, 0.9);
-    transform: scale(1.1);
+    background-color: rgb(245, 24, 120);
+    color: white;
+    transform: translateY(-1px);
 }
 
+/* Sign Up Button */
 .navbar-signup {
     background-color: rgb(232, 23, 114);
     color: white;
-    padding: 0.5em 1em;
-    border-radius: 5px;
+    padding: 0.5em 1.2em;
+    border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .navbar-signup:hover {
-    background-color:  rgb(209, 26, 105);
-    transform: scale(1.1);
+    background-color: rgb(209, 26, 105);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(232, 23, 114, 0.3);
 }
 
+/* ===== HERO SECTION ===== */
 .hero {
-  background-color: rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
+    padding: 2em 0;
 }
 
 .loc-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .content {
-  padding: 20px;
+    padding: 20px;
+    flex: 1;
 }
 
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
 }
 
 .mascot {
-  width: 950px;
-  height: 650px;
+    width: 100%;
+    max-width: 950px;
+    height: auto; /* Responsive height */
 }
 
+/* ===== SEARCH FORM ===== */
 .search-form {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 5px;
+    display: flex;
+    align-items: stretch;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 8px;
+    margin: 2em 0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    width: 100%;
 }
 
 .search-form input[type="text"] {
-  flex: 1;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  margin-right: 10px;
-  outline: none;
-  font-size: 1em;
+    flex: 1;
+    padding: 18px 25px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    min-width: 200px;
+}
+
+.search-form input[type="text"]::placeholder {
+    color: #888;
+    font-weight: 400;
 }
 
 .search-form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 1em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
 }
 
 .search-form .locate-me {
-  background-color: #f7f7f7;
-  color: rgb(232, 23, 114);
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
+    background-color: #f8f9fa;
+    color: rgb(232, 23, 114);
+    border: 2px solid #e9ecef;
+    margin-right: 8px;
+    position: relative;
+    overflow: hidden;
 }
 
 .search-form .locate-me .locate-icon {
-  margin-right: 5px;
+    margin-right: 6px;
+    font-size: 16px;
 }
 
 .search-form .find-food {
-  background-color: rgb(232, 23, 114);
-  color: #ffffff;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    background: linear-gradient(135deg, rgb(232, 23, 114), rgb(209, 26, 105));
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 15px rgba(232, 23, 114, 0.25);
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .search-form .locate-me:hover {
-  opacity: 0.8;
-  background-color:  rgba(236, 220, 226, 0.9);
-  transform: scale(1.1);
+    background-color: #ffffff;
+    border-color: rgb(232, 23, 114);
+    color: rgb(209, 26, 105);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(232, 23, 114, 0.15);
 }
 
-.search-form .find-food:hover{
-  background-color:  rgb(209, 26, 105);
-  transform: scale(1.1);
+.search-form .find-food:hover {
+    background: linear-gradient(135deg, rgb(209, 26, 105), rgb(185, 23, 95));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(232, 23, 114, 0.35);
 }
 
+.search-form .find-food:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(232, 23, 114, 0.25);
+}
+
+/* ===== MAIN CONTENT CONTAINER ===== */
 .foodpanda-container {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    color: #333;
 }
 
 .foodpanda-container h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .foodpanda-container h2 {
-  font-size: 20px;
-  margin-top: 20px;
+    font-size: 22px;
+    margin-top: 25px;
+    color: #444;
 }
 
 .foodpanda-container h3 {
-  font-size: 18px;
-  margin-top: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
 }
 
 .foodpanda-container ul {
-  list-style: disc;
-  margin-left: 20px;
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .foodpanda-container p {
-  margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.main-heading {
-  font-size: 36px;
-  text-align: left;
-  margin-top: 40px;
-  margin-left: 350px;
-  color: #333;
+/* ===== SECTION HEADINGS ===== */
+.main-heading,
+.card-heading {
+    font-size: 36px;
+    text-align: center; /* Centered for better mobile experience */
+    margin: 40px auto;
+    color: #333;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
+/* ===== DOWNLOAD SECTION ===== */
 .foodpanda-download-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e6006e;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px auto;
-  color: white;
-  width: 80%; 
-  max-width: 1200px; 
-  height: 300px; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #ff1b6b, #e6006e, #d1195d, #45a3ff);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    padding: 50px;
+    border-radius: 25px;
+    margin: 60px auto;
+    color: white;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 350px;
+    box-shadow: 0 20px 60px rgba(230, 0, 110, 0.4);
+    overflow: hidden;
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Decorative elements */
+.foodpanda-download-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.foodpanda-download-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -20%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-20px) scale(1.05); }
 }
 
 .foodpanda-download-section .content {
-  max-width: 50%;
+    flex: 1;
+    max-width: 55%;
+    padding-right: 30px;
+    z-index: 2;
+    position: relative;
 }
 
 .foodpanda-download-section .content h1 {
-  font-size: 36px;
-  color: rgb(0, 0, 0);
-  margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .foodpanda-download-section .content h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    opacity: 0.95;
+    line-height: 1.3;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .foodpanda-download-section .content p {
-  font-size: 16px;
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Download buttons container */
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .foodpanda-download-section .image {
-  max-width: 50%;
-  display: flex;
-  justify-content: flex-end;
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+    position: relative;
 }
 
 .foodpanda-download-section .image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
+.foodpanda-download-section .image img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+/* ===== CARDS SECTION ===== */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(232, 23, 114, 0.05), rgba(69, 163, 255, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card .label {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    color: #333;
+    padding: 15px 22px;
+    border-radius: 16px;
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.card:hover .label {
+    background: rgba(232, 23, 114, 0.95);
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(232, 23, 114, 0.3);
+}
+
+/* Card category indicators */
+.card .category-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, rgba(232, 23, 114, 0.9), rgba(209, 26, 105, 0.9));
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.card:hover .category-badge {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== FOOTER ===== */
 footer {
-  background-color: rgb(247, 247, 247);
-  color: black;
-  padding: 0em 13em;
+    background-color: rgb(247, 247, 247);
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 60px;
 }
 
 footer .last-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-left .footer-logo {
-  width: 200px;
+    width: 160px;
+    height: auto;
 }
 
-.footer-left p{
-  text-align: center;
+.footer-left p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
 }
 
 .footer-center {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .footer-center a {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
 }
 
 .footer-center a:hover {
-  text-decoration: underline;
+    color: rgb(232, 23, 114);
+    text-decoration: underline;
 }
 
 .footer-right {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 15px;
 }
 
 .footer-right .social-logo {
-  width: 30px;
-  height: 30px;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s ease;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-.card {
-  position: relative;
-  width: 350px;
-  overflow: hidden;
-  border-radius: 18px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.card:hover {
-  transform: scale(1.1);
-}
-.card .label {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  background-color: white;
-  color: black;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 18px;
+.footer-right .social-logo:hover {
+    transform: scale(1.1);
 }
 
-.card-heading {
-  font-size: 36px;
-  text-align: left;
-  margin-top: 40px;
-  margin-left: 350px;
-  color: #333;
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .navbar-container {
+        padding: 0.8em 1.5em;
+    }
+    
+    .navbar-logo {
+        width: 140px;
+    }
+    
+    .loc-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .mascot {
+        max-width: 600px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .main-heading,
+    .card-heading {
+        font-size: 28px;
+    }
+    
+    .foodpanda-download-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+        margin: 40px auto;
+        min-height: auto;
+    }
+    
+    .foodpanda-download-section .content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .foodpanda-download-section .content h1 {
+        font-size: 32px;
+    }
+    
+    .foodpanda-download-section .content h2 {
+        font-size: 22px;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .foodpanda-download-section .image {
+        max-width: 90%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .navbar-container {
+        height: 60px;
+        padding: 0.5em 1em;
+    }
+    
+    .navbar-logo {
+        width: 120px;
+    }
+    
+    .navbar-nav {
+        gap: 0.3em;
+    }
+    
+    .navbar-link-1,
+    .navbar-link-2,
+    .navbar-button,
+    .navbar-signup {
+        padding: 0.3em 0.6em;
+        font-size: 12px;
+    }
+    
+    .content {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .search-form {
+        flex-direction: column;
+        padding: 15px;
+        align-items: stretch;
+        gap: 12px;
+    }
+    
+    .search-form input[type="text"] {
+        padding: 16px 20px;
+        border-radius: 25px;
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        min-width: unset;
+    }
+    
+    .search-form button {
+        width: 100%;
+        padding: 16px 20px;
+        margin-right: 0;
+    }
+    
+    .search-form .locate-me {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    
+    .main-heading,
+    .card-heading {
+        font-size: 24px;
+        margin: 30px auto;
+    }
+    
+    .foodpanda-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .foodpanda-download-section {
+        width: 95%;
+        padding: 30px 20px;
+        margin: 30px auto;
+    }
+    
+    .foodpanda-download-section .content h1 {
+        font-size: 28px;
+    }
+    
+    .foodpanda-download-section .content h2 {
+        font-size: 20px;
+    }
+    
+    .foodpanda-download-section .content p {
+        font-size: 16px;
+    }
+    
+    footer .last-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-center {
+        justify-content: center;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    .navbar-container {
+        padding: 0.5em;
+    }
+    
+    .navbar-logo {
+        width: 100px;
+    }
+    
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .main-heading,
+    .card-heading {
+        font-size: 20px;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    
+    .card .label {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }
