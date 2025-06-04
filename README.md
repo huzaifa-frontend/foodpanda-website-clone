@@ -1,6 +1,6 @@
 # Foodpanda Clone Website
 
-🌐 **Live Demo:** [Click here to visit site](https://https://huzaifa-frontend.github.io/foodpanda-clone-html-css/)
+🌐 **Live Demo:** [Click here to visit site](https://huzaifa-frontend.github.io/foodpanda-clone-html-css/)
 
 ## 📋 Overview
 
