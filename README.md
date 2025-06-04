@@ -1,51 +1,49 @@
-# 🍔 Burger Website
+# Foodpanda Clone Website
 
-🌐 **Live Demo:** [Click here to visit site](https://huzaifa-frontend.github.io/burger-website-bootstrap/)
+🌐 **Live Demo:** [Click here to visit site](https://https://huzaifa-frontend.github.io/foodpanda-clone-html-css/)
 
 ## 📋 Overview
 
-This is a responsive burger restaurant website built using **Bootstrap 5** and custom CSS for enhanced styling and animations. The site features a sleek carousel, smooth navigation bar with glassmorphism effect, interactive social icons, and responsive design for mobile and desktop.
+This is a **clone of the official Foodpanda Pakistan website** built for educational and portfolio purposes. The project replicates the layout, structure, and design elements of [Foodpanda Pakistan](https://www.foodpanda.pk/) using **HTML5** and **CSS3**. It is responsive and optimized for both desktop and mobile devices.
 
-- 🏠 Navigation bar with gradient hover effects, active link styling, and backdrop blur
-- 💡 Bootstrap-powered responsive carousel with custom hover zoom and brightness effects
-- 📈 Social media icons with rotation animation on hover
-- 👥 About us ("Who We Are") section with team members
-- 💼 Fully responsive design with mobile-friendly adjustments
-- 👣 Custom footer with vibrant background color
+> ⚠️ **Disclaimer:** This website is a front-end **clone project** made purely for educational and non-commercial purposes. All trademarks, logos, and brand names belong to [Foodpanda](https://www.foodpanda.pk/). No copyright infringement intended.
+
+- 🛵 Hero section replicating Foodpanda's delivery theme
+- 📍 Location input interface styled to match Foodpanda’s UX
+- 🥡 Sections for restaurants, groceries, and shops
+- 📱 Fully responsive across all screen sizes
 
 ## 💻 Technologies Used
 
 - HTML5
-- CSS3 (Custom styles with transitions, gradients, and media queries)
-- [Bootstrap 5](https://getbootstrap.com/) (Carousel, Navbar, Grid, utilities)
+- CSS3 (Custom styling, transitions, responsive tweaks)
 - Google Fonts
 - FontAwesome
-- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) – Scroll-triggered animations on elements
 
 ## 🚀 How to Use
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/huzaifa-frontend/burger-website-bootstrap.git
+   git clone https://github.com/huzaifa-frontend/foodpanda-clone-html-css.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd burger-website-bootstrap
+   cd foodpanda-clone-html-css
    ```
 3. Open `index.html` in your browser.
 
 ## 🛠️ Features
 
-- Bootstrap Carousel: Responsive carousel with smooth hover effects and custom transitions
-- Navigation Bar: Bootstrap navbar enhanced with glassmorphism effect and animated gradient links
-- Social Icons: FontAwesome icons with rotation and scaling on hover
-- Responsive Design: Fully responsive layout with optimized mobile navigation and logo resizing
+- Hero Section: Replicated hero UI with background image, location input, and call-to-action buttons
+- Navigation: Simple and clean navbar styled like Foodpanda’s interface
+- Service Sections: Cards/sections for food, grocery, and delivery info
+- Responsive Layout: Adjusted breakpoints and flex/grid for better UX on all devices
 - Footer: Bright, visually appealing footer background for brand consistency
 
 ## 📁 File Structure
 
 ```
-📦 burger-website-bootstrap
+📦 foodpanda-clone-html-css
  ┣ 📂 assets
  ┣ 📄 index.html
  ┣ 📄 style.css
@@ -55,13 +53,14 @@ This is a responsive burger restaurant website built using **Bootstrap 5** and c
 
 ## ✨ Credits
 
-- Designed & Developed by Muhammad Huzaifa Karim.
-- Icons from [Font Awesome](https://fontawesome.com/)
-- Background images from [Unsplash](https://unsplash.com/)
+- Original design inspiration from [Foodpanda Pakistan](https://www.foodpanda.pk/)
+- Icons by [Font Awesome](https://fontawesome.com/)
+- Fonts via [Google Fonts](https://fonts.google.com/)
+- Images from [Unsplash](https://unsplash.com/) & Foodpanda’s UI (for demo purposes only)
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
 ## ✍️ Author
 
@@ -70,11 +69,11 @@ This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LI
 
 ## 🔄 Deployment
 
-This project is deployed via GitHub Pages. Any changes pushed to the main branch will automatically update the live site.
+This clone project is deployed via GitHub Pages. Any changes pushed to the `main` branch automatically reflect on the live site.
 
 ## 📬 Contact
 
-For any queries or collaboration requests, feel free to reach out via GitHub.
+For feedback, collaborations, or questions, feel free to contact me via GitHub.
 
 ---
 
