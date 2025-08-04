@@ -24,11 +24,11 @@ This is a **clone of the official Foodpanda Pakistan website** built for educati
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/huzaifa-frontend/foodpanda-clone-html-css.git
+   git clone https://github.com/huzaifa-frontend/foodpanda-website-clone.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd foodpanda-clone-html-css
+   cd foodpanda-website-clone
    ```
 3. Open `index.html` in your browser.
 
@@ -43,7 +43,7 @@ This is a **clone of the official Foodpanda Pakistan website** built for educati
 ## 📁 File Structure
 
 ```
-📦 foodpanda-clone-html-css
+📦 foodpanda-website-clone
  ┣ 📂 assets
  ┣ 📄 index.html
  ┣ 📄 style.css
@@ -64,7 +64,7 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 ## ✍️ Author
 
-**Muhammad Huzaifa Karim**  
+**Muhammad Huzaifa Karim**
 [GitHub Profile](https://github.com/huzaifakarim1)
 
 ## 🔄 Deployment
